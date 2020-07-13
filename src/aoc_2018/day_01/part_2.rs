@@ -1,6 +1,6 @@
-use std::fs;
+use std::{collections::HashSet, fs};
 
-pub fn run() {
+pub fn run() -> i32 {
     let frequencies = fs::read_to_string("day_1.txt")
         .unwrap()
         .lines()

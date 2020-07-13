@@ -26,6 +26,9 @@ pub fn run() {
         .map(|line| analyze_word(line.to_string()))
         .collect::<Vec<(bool, bool)>>();
     let two_counts = results.iter().filter(|(two_count, _)| *two_count).count();
-    let three_counts = results.iter().filter(|(_, three_count)| *three_count).count();
-    println!("{:?}", two_counts* three_counts);
+    let three_counts = results
+        .iter()
+        .filter(|(_, three_count)| *three_count)
+        .count();
+    println!("{:?}", two_counts * three_counts);
 }
