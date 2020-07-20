@@ -1,11 +1,9 @@
 use std::{collections::HashSet, fs};
+#[path="common.rs"]
+mod common;
 
 pub fn run() -> i32 {
-    let frequencies = fs::read_to_string("day_1.txt")
-        .unwrap()
-        .lines()
-        .map(|line| line.parse::<i32>().unwrap())
-        .collect::<Vec<_>>();
+    let frequencies = common::read_input().unwrap();
 
     let mut seen = HashSet::new();
     seen.insert(0);
