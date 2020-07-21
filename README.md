@@ -1,3 +1,4 @@
 # rust-aoc
 
-[Advent of code](https://adventofcode.com/)'s exercises resolved in `Rust: Mob Programming` events
+Problemas de [Advent of code](https://adventofcode.com/) resueltos en vivo por [Twitch](https://twitch.tv/mozilla_pe) en sesiones `Rust: Mob Programming`.
+
